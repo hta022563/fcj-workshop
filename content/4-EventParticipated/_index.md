@@ -20,7 +20,7 @@ During the internship, I attended five technical talks and community events host
 ### [Event 2](4.2-Event2/)
 &emsp;**Event Name:** AWS Cloud and AI Day Hanoi (Ho Chi Minh City Watch Party)
 
-&emsp;**Date & Time:** 09:00, August 13, 2025
+&emsp;**Date & Time:** 09:00, August 13, 2026
 
 &emsp;**Location:** Watch Party Hub – 26th Floor, Bitexco Tower, Ho Chi Minh City
 

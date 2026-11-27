@@ -131,7 +131,7 @@ Estimated total infrastructure cost is about ~$165 USD/month running 24/7 in the
 **Risk Matrix & Mitigation Strategies:**
 - **Long video transcoding exceeding timeouts (Medium impact, medium probability):** The /upload/process API runs synchronously while CloudFront waits at most 60 seconds. Demo with short videos; the improvement is background processing (return 202 and poll the status).
 - **AWS  lacks full native DRM (High impact, low probability):** Clearly define scope around secure video access, anti-sharing, and traceability. Enable `requireSignedURLs`, short-lived tokens, and watermarks. MVP does not equal Widevine/PlayReady/FairPlay.
-- **Signed Token leakage or incorrect expiration (Medium impact, medium probability):** Set short TTLs (1 hour), limit concurrent device sessions, and combine with AI anomaly detection.
+- **Signed Token leakage or incorrect expiration (Medium impact, medium probability):** Set short TTLs (2 hours), limit concurrent device sessions, and combine with AI anomaly detection.
 - **AI model false-positive predictions (Medium impact, medium probability):** Start with Isolation Forest, tune contamination thresholds properly, and log false-positives for periodic retraining.
 - **Short internship duration (6 weeks) (High impact, low probability):** Prioritize MVP first: Upload → Process → Authorization → Secure Playback, then integrate AI and watermarks.
 - **Cost overruns (Medium impact, low probability):** Set up strict budget alarms inside AWS Budgets.

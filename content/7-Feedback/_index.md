@@ -8,7 +8,7 @@ pre: " <b> 7. </b> "
 
 ### What Changed Most Over These Three Months
 
-Before joining the **Workforce Bootcamp – First Cloud AI Journey (FCAJ)** program at **Amazon Web Services Viet Nam Company Limited** (14/09/2026 – 14/12/2026), my approach to school projects was pretty simple: build the React UI, wire up an API on localhost, and call it finished. Three months with cohort AWS082025, especially working on **Frontend and system architecture** for **SecureLearn**, changed how I think about building software.
+Before joining the **Workforce Bootcamp – First Cloud AI Journey (FCAJ)** program at **Amazon Web Services Viet Nam Company Limited** (14/09/2026 – 14/12/2026), my approach to school projects was pretty simple: build the React UI, wire up an API on localhost, and call it finished. Three months with cohort Rito3077, especially working on **Frontend and system architecture** for **SecureLearn**, changed how I think about building software.
 
 Working on a real cloud deployment showed me that getting features to run is only half the story; the rest is security, cost, and how services actually talk to one another. Even a single playback flow in SecureLearn involved tracing Cognito JWTs, browser Device Fingerprints, CloudFront and AWS WAF routing into Spring Boot on ECS Fargate, AES-128 keys, 60-second S3 presigned segments, plus the 60 FPS Dynamic Watermark and anti-PrintScreen guards in the browser. After sending our architecture diagram on WhatsApp and getting feedback from Mr. Hung and our mentors, consolidating our initial draft onto an all-AWS stack made the architecture much cleaner. It also taught me practical cost habits, like shutting down ECS and RDS outside working hours to bring monthly costs from ~$165 down to roughly ~$60–75.
 
@@ -28,4 +28,4 @@ Speaking from the perspective of someone focusing on Frontend while learning Clo
 
 ### Thank You
 
-Finally, thank you to the FCAJ organizers, Mr. Hung, all the mentors, guest speakers, cohort AWS082025, and my SecureLearn teammates for a supportive and memorable three months. Moving forward, I plan to keep studying for the AWS Solutions Architect – Associate (SAA-C03) certification and continue growing across both Frontend engineering and Cloud Architecture.
+Finally, thank you to the FCAJ organizers, Mr. Hung, all the mentors, guest speakers, cohort Rito3077, and my SecureLearn teammates for a supportive and memorable three months. Moving forward, I plan to keep studying for the AWS Solutions Architect – Associate (SAA-C03) certification and continue growing across both Frontend engineering and Cloud Architecture.

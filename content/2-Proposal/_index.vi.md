@@ -133,7 +133,7 @@ Tổng chi phí hạ tầng ước tính khoảng ~$165 USD/tháng khi chạy 24
 **Ma trận rủi ro & Phương án giảm thiểu:**
 - **Chuyển mã video dài vượt thời gian chờ (Mức độ trung bình, xác suất trung bình):** API /upload/process chạy đồng bộ trong khi CloudFront chỉ chờ tối đa 60 giây. Demo bằng video ngắn; hướng cải tiến là xử lý nền (trả 202 và hỏi trạng thái)
 - **AWS  không hỗ trợ DRM đầy đủ (Mức độ cao, xác suất thấp):** Xác định đúng scope là secure video access + anti-sharing + traceability. Bật `requireSignedURLs`, token ngắn hạn và watermark. MVP không tương đương Widevine/PlayReady/FairPlay.
-- **Signed Token bị lộ hoặc hết hạn sai cách (Mức độ trung bình, xác suất trung bình):** Thiết lập TTL ngắn (1 giờ), giới hạn thiết bị đồng thời, kết hợp AI phát hiện bất thường.
+- **Signed Token bị lộ hoặc hết hạn sai cách (Mức độ trung bình, xác suất trung bình):** Thiết lập TTL ngắn (2 giờ), giới hạn thiết bị đồng thời, kết hợp AI phát hiện bất thường.
 - **Mô hình AI dự đoán sai (False Positive) (Mức độ trung bình, xác suất trung bình):** Bắt đầu với Isolation Forest, điều chỉnh ngưỡng contamination phù hợp. Log các trường hợp false-positive để retrain định kỳ.
 - **Thời gian thực tập ngắn (6 tuần) (Mức độ cao, xác suất thấp):** Ưu tiên MVP trước: Upload → Process → Authorization → Secure Playback, sau đó mới tích hợp AI và watermark.
 - **Chi phí phát sinh (Mức độ trung bình, xác suất thấp):** Thiết lập cảnh báo ngân sách trên AWS.

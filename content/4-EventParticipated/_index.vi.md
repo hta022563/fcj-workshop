@@ -20,7 +20,7 @@ Trong thời gian tham gia chương trình thực tập, tôi đã góp mặt �
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** AWS Cloud and AI Day Hanoi (Watch Party tại TP.HCM)
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 09:00 ngày 13/08/2026
 
 &emsp;**Địa điểm:** Điểm cầu trực tuyến – Tầng 26, tòa nhà Bitexco, số 02 Hải Triều, TP. Hồ Chí Minh
 
