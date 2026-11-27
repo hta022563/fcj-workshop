@@ -19,3 +19,27 @@ Small and medium-sized educational centers (SMEs) face severe intellectual prope
 
 ![General Architecture](general.png)
 
+### 3. Cost Estimation & Optimization
+
+Estimated infrastructure cost for running **SecureLearn** in `ap-southeast-1` (Singapore) under a baseline workload of **100 hours of stored video + 100 hours of playback/month** is **~$165 USD/month** for 24/7 operation, or **~$60–75 USD/month** when scheduling ECS and RDS to run only during working hours (~8 hours/day). *(See also [Budget Estimation in Proposal](../../2-proposal/).)*
+
+| Service | Estimated Monthly Cost | Notes |
+| --- | --- | --- |
+| **Amazon ECS Fargate** | ~$93.00 | 1 task (2 vCPU / 4 GB RAM + 50 GB ephemeral storage) |
+| **Application Load Balancer** | ~$23.00 | 1 ALB, low traffic |
+| **Amazon RDS for PostgreSQL** | ~$21.00 | `db.t4g.micro` Single-AZ + 20 GB gp3 |
+| **AWS WAF** | ~$12.00 | 1 Web ACL + 7 rules |
+| **Amazon S3** | ~$2.00 | ~70 GB HLS segments, frontend, and ML model |
+| **AWS KMS** | ~$1.15 | Customer Managed Key for secrets encryption |
+| **Amazon CloudWatch & ECR** | ~$0.75 | Audit logs, alarms, and container image storage |
+| **AWS Route 53** | ~$0.50 | 1 hosted zone (excluding domain registration) |
+| **AWS Secrets Manager** | ~$0.40 | Database, Cognito, and token-signing secrets |
+| **Amazon API Gateway** | ~$0.10 | ~20k REST API calls |
+| **Cognito, CloudFront, Lambda, DynamoDB, EventBridge** | $0.00 | Covered by AWS Always-Free / Free Tier limits |
+
+**Cost Optimization Practices:**
+* **Zero DRM licensing fees:** AES-128 HLS encryption with short-lived presigned URLs and dynamic JS watermarks avoids commercial DRM per-seat/licensing overhead.
+* **No NAT Gateway cost:** ECS tasks and Lambda run without a dedicated NAT Gateway, using VPC S3 Gateway Endpoint for private S3 traffic.
+* **Serverless & Free-Tier leverage:** Cognito, CloudFront (1 TB/month Always Free), Lambda (50k invocations), DynamoDB On-Demand, EventBridge, and SNS stay within Free Tier under workshop traffic.
+* **Scheduled compute & immediate cleanup:** Stop ECS/RDS outside demo hours and follow [Clean Up Resources](../5.6-cleanup/) immediately after testing to eliminate hourly charges.
+

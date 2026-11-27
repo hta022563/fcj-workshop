@@ -17,7 +17,7 @@ Trong workshop này, bạn sẽ xây dựng **SecureLearn**, một giải pháp 
 
 ### Nội dung Workshop
 
-1. [Tổng quan Workshop](5.1-Workshop-overview/)
+1. [Tổng quan Workshop (Kiến trúc & Ước tính chi phí)](5.1-Workshop-overview/)
 2. [Các bước chuẩn bị (Prerequisites)](5.2-Prerequiste/)
 3. [Triển khai Control Plane trên AWS](5.3-AWS-Control-Plane/)
    - [Amazon Cognito User Pool](5.3-AWS-Control-Plane/5.3.1-cognito/)

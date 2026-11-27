@@ -18,7 +18,7 @@ In this workshop, you will build **SecureLearn**, a cost-effective video content
 
 ### Workshop Content
 
-1. [Workshop Overview](5.1-Workshop-overview/)
+1. [Workshop Overview (Architecture & Cost Estimation)](5.1-Workshop-overview/)
 2. [Prerequisites](5.2-Prerequiste/)
 3. [Deploying the Control Plane on AWS](5.3-AWS-Control-Plane/)
    - [Amazon Cognito User Pool](5.3-AWS-Control-Plane/5.3.1-cognito/)
