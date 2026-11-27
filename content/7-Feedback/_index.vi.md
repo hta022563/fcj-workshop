@@ -20,11 +20,12 @@ Làm chung với các bạn trong nhóm dự án cũng cho tôi nhiều kỷ ni�
 
 ### Một vài góp ý nhỏ cho các khóa sau
 
-Từ góc nhìn của người làm Frontend khi nhảy sang dự án Cloud, tôi có ba góp ý nhỏ mong sẽ hữu ích cho các khóa thực tập tiếp theo:
+Từ góc nhìn của người làm Frontend khi nhảy sang dự án Cloud, tôi có bốn góp ý nhỏ mong sẽ hữu ích cho các khóa thực tập tiếp theo:
 
 * **Có thêm một bài lab nhỏ về nối Frontend với AWS:** Đa số lab hiện tại thao tác trên Console hoặc CLI. Nếu có thêm phần hướng dẫn ngắn cách nối một trang React/SPA thật với Cognito, bật CloudFront Function cho SPA và upload file lớn qua S3 Presigned URL thì mấy bạn thiên về Frontend sẽ đỡ tốn thời gian mò lỗi tích hợp lúc làm đồ án cuối kỳ.
 * **Review kiến trúc sớm tầm tuần 7–8:** Nhóm tôi nhận được rất nhiều góp ý giá trị sau khi gửi sơ đồ kiến trúc qua WhatsApp cho sếp Hùng và các mentor xem, nên nếu có một mốc gửi sơ đồ để góp ý nhanh ngay khi các nhóm mới chốt Proposal thì sẽ tránh được việc code gần xong rồi mới phải sửa lại hạ tầng (như vụ timeout 60 giây của CloudFront hay chi phí ECS/RDS).
 * **Thêm vài tình huống tự tìm lỗi (Troubleshooting):** Bên cạnh hướng dẫn làm từng bước suôn sẻ, có thêm một vài bài cố tình gài lỗi nhỏ (thiếu quyền IAM, sai CORS, token hết hạn) sẽ giúp sinh viên quen tay đọc log CloudWatch và tự khoanh vùng lỗi nhanh hơn.
+* **Điều chỉnh nhiệt độ điều hòa buổi chiều:** Từ tầm 14h30 chiều trở đi, nhiệt độ trong phòng đột nhiên rất lạnh, cảm giác lạnh từ dưới chân lạnh lên nên dù có mang áo khoác mặc vào vẫn không ổn, hôm nào quên mang áo khoác thì lạnh không chịu nổi. Mong ban tổ chức có thể điều chỉnh điều hòa bớt lạnh hơn vào buổi chiều để các khóa thực tập sau ngồi làm việc thoải mái hơn.
 
 ### Lời cảm ơn
 

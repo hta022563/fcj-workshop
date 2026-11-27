@@ -20,11 +20,12 @@ Working closely with my SecureLearn teammates was just as memorable, from chasin
 
 ### A Few Suggestions for Future Cohorts
 
-Speaking from the perspective of someone focusing on Frontend while learning Cloud architecture, I have three small suggestions for upcoming cohorts:
+Speaking from the perspective of someone focusing on Frontend while learning Cloud architecture, I have four small suggestions for upcoming cohorts:
 
 * **Add a short Frontend-to-AWS integration lab:** Most labs focus on the AWS Console or CLI. A quick guide showing how a real React/SPA app connects to Cognito, uses a CloudFront Function for SPA routes, and uploads large files via S3 Presigned URLs would save Frontend-focused interns a lot of trial and error during capstone projects.
 * **Hold quick architecture check-ins around Weeks 7–8:** Sending our diagram over WhatsApp to Mr. Hung and the mentors gave us super helpful feedback, so having an early review checkpoint right after teams draft their Proposal would help catch things like CloudFront's 60-second timeout or ECS/RDS hourly costs early before heavy coding starts.
 * **Mix in a few break-and-fix troubleshooting exercises:** Adding occasional intentional misconfigurations (missing IAM permissions, CORS headers, expired tokens) alongside step-by-step labs would help interns get comfortable reading CloudWatch logs and diagnosing issues faster.
+* **Adjust the office AC temperature in the afternoon:** From around 2:30 PM onward, the room suddenly gets freezing cold from the floor up, to the point where even wearing a jacket barely helps and forgetting one makes it really tough to focus. Raising the AC temperature a bit in the afternoon would make the workspace much more comfortable for future cohorts.
 
 ### Thank You
 
