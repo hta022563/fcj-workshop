@@ -19,7 +19,7 @@ chapter: false
 
 &emsp; **Major:** Information Technology
 
-&emsp; **Class:** AWS082025
+&emsp; **Class:** Rito3077
 
 &emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
 
